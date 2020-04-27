@@ -1,0 +1,6 @@
+FROM golang:alpine
+COPY src /go/src/go-react-template/src
+COPY vendor /go/src/go-react-template/vendor
+WORKDIR /go/src/go-react-template
+RUN apk add --no-cache --virtual .build-deps git; \
+  go build -o app src/go/server.go;

@@ -1,0 +1,26 @@
+# vscode
+*vscode
+*.pem
+
+# docker
+!docker*
+
+# secrets
+*cabundle*
+# secret*
+env.*
+*.env
+
+# testing
+/coverage
+
+# production
+/node_modules
+/bin/**/*
+*server
+
+# misc
+.DS_Store
+*.sql
+*.yml
+*.yaml
